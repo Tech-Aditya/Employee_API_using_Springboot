@@ -42,16 +42,6 @@ public class EmployeeController {
 
     }
 
-//    @GetMapping("/byCity/{emp_city}")
-//    public List<Employee> getByCity(@PathVariable String emp_city) {
-//        return employeeService.getByCity(emp_city);
-//    }
-//
-//    @GetMapping("/byName/{EmpName}")
-//    public List<Employee> getEmpByName(@PathVariable String EmpName) {
-//        return employeeService.getEmpByName(EmpName);
-//    }
-
     @PutMapping("/employee/{empId}")
     public String updateEmployeeById(@PathVariable long empId, @RequestBody Employee employee) {
         return employeeService.updateEmployeeById(empId, employee);
