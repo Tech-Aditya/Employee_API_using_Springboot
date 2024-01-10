@@ -1,0 +1,11 @@
+First, Create a Database and Then Create Table Eomloyee:- 
+
+//Code
+
+CREATE TABLE employee (
+    emp_id INT PRIMARY KEY,
+    EmpName VARCHAR(255),
+    emp_salary DECIMAL(10, 2),
+    emp_age INT,
+    emp_city VARCHAR(100)
+);
